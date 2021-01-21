@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 .main-section {
     width: 100vw;
     height: 100vh;
@@ -31,6 +36,7 @@
     width: 100vw;
     height: 60px;
     background: #1BE091;
+    box-shadow: 0px 1px 20px black;
     z-index: 1;
     position: relative;
 }
@@ -41,10 +47,6 @@
     justify-content: space-evenly;
     width: 300px;
     list-style: none;
-}
-
-.main-section nav ul li a img {
-    
 }
 
 .main-section h1 {

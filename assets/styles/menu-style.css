@@ -1,0 +1,14 @@
+.main-section nav img {
+    margin: auto 40px;
+    cursor: pointer;
+}
+
+.burger-menu-div {
+    height: 565px;
+    top: 60px;
+    right: 0;
+    background: #F0F0F0;
+    box-shadow: inset 0px 0px 10px black;
+    transition: all .5s ease-in-out;
+    position: absolute;
+}
