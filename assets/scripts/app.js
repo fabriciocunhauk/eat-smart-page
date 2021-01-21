@@ -7,6 +7,13 @@ const menuView = document.createElement('div');
 menuView.classList.add('burger-menu-div');
 sideMenu.appendChild(menuView)
 
+const a = document.createElement('a');
+const linkText = document.createTextNode("Diet");
+a.classList.add("link");
+a.appendChild(linkText);
+a.href = '#middle-section';
+menuView.appendChild(a);
+
 let menuEvent = false;
 
 function handleMenu() {
@@ -14,8 +21,8 @@ function handleMenu() {
         menuEvent = true;
         menuOpen();
     } else {
-        menuEvent = false;
         menuClose();
+        menuEvent = false;
     }
 };
 

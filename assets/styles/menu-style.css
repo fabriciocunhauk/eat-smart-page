@@ -4,6 +4,9 @@
 }
 
 .burger-menu-div {
+    display: flex;
+    justify-content: center;
+    width: 0;
     height: 565px;
     top: 60px;
     right: 0;
@@ -11,4 +14,14 @@
     box-shadow: inset 0px 0px 10px black;
     transition: all .5s ease-in-out;
     position: absolute;
+}
+
+.burger-menu-div h1 {
+    color: black;
+}
+
+.link {
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
 }
