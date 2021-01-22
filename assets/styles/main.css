@@ -2,15 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
-body {
+body,
+html {
     overflow-x: hidden;
     width: 100%;
 }
 
 .main-section {
+    display: flex;
+    align-items: center;
     width: 100vw;
     height: 100vh;
     background-image: url('../images/main-bg.jpg');
@@ -30,33 +34,13 @@ body {
     left: 0;
 }
 
-.main-section nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-    height: 60px;
-    background: #1BE091;
-    box-shadow: 0px 1px 20px black;
-    z-index: 1;
-    position: relative;
-}
-
-.main-section nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 300px;
-    list-style: none;
-}
-
 .main-section h1 {
-    margin: 15% 80% 50% 10%;
-    font-size: 5rem;
+    margin-left: 50px;
+    font-size: 4rem;
     color: white;
     position: relative;
     z-index: 1;
-    text-shadow: 30px 20px 20px white;
+    text-shadow: 8px 10px 15px white;
     width: 400px;
 }
 
@@ -118,4 +102,23 @@ body {
     width: 100vw;
     height: 100px;
     background: #1BE091;
+}
+
+.footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer ul li a {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer ul li a img {
+    padding: 10px;
 }

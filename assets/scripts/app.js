@@ -1,18 +1,8 @@
 const burgerMenu = document.getElementById('burger-menu');
-const sideMenu = document.getElementById('side-menu');
+const sideMenu = document.getElementById('menu-container');
+const burgerMenuDiv = document.querySelector('.burger-menu-div');
 
 burgerMenu.addEventListener('click', handleMenu);
-
-const menuView = document.createElement('div');
-menuView.classList.add('burger-menu-div');
-sideMenu.appendChild(menuView)
-
-const a = document.createElement('a');
-const linkText = document.createTextNode("Diet");
-a.classList.add("link");
-a.appendChild(linkText);
-a.href = '#middle-section';
-menuView.appendChild(a);
 
 let menuEvent = false;
 
@@ -27,9 +17,9 @@ function handleMenu() {
 };
 
 function menuOpen() {
-    menuView.style.width = '500px';
+    burgerMenuDiv.style.width = '300px';
 };
 
 function menuClose() {
-    menuView.style.width = '0';
+    burgerMenuDiv.style.width = '0';
 };
